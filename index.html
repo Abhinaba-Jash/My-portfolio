@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/i-rounded.png" type="image/x-icon" />
+    <!-- Add this inside <head> before </head> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header fade-in">
+      <h1 id="name">Abhinaba Jash</h1>
+      <p>Software Developer | MERN Stack | AI/ML Enthusiast</p>
+      <div
+        class="hamburger"
+        onclick="document.querySelector('nav ul').classList.toggle('show')"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about" class="slide-in">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="assets/i.jpg" alt="My Photo" class="profile-pic" />
+        <p id="about-text">
+          I am a final-year Computer Science and Engineering student passionate
+          about building impactful and user-centric digital solutions. With a
+          strong foundation in the MERN Stack and a growing interest in
+          Artificial Intelligence and Machine Learning, I have worked on diverse
+          projects ranging from full-stack web applications to deep learning
+          models for video analysis. I thrive on problem-solving and continuous
+          learning. My technical journey has included hackathons, internships,
+          research-based projects, and open-source contributions. I'm
+          particularly interested in leveraging technology to solve real-world
+          challenges, especially in the fields of education, healthcare, and
+          communication. Beyond coding, I enjoy mentoring peers, writing tech
+          blogs, and participating in coding communities. I'm currently seeking
+          internship or full-time opportunities where I can contribute, grow,
+          and collaborate with like-minded innovators.
+        </p>
+        <button id="speak-button" onclick="speakAbout()" class="speak-button">
+          🔊 Speak Aloud
+        </button>
+      </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+      <h2>Projects</h2>
+      <div class="project">
+        <span id="status-block"
+          >Status:
+          <span style="padding-left: 6px; color: green" id="status">
+            Completed</span
+          ></span
+        >
+
+        <h3>CallConnect</h3>
+        <p>
+          CallConnect is a full-stack real-time audio/video communication
+          platform built using WebRTC, Socket.IO, Node.js, and MongoDB. It
+          supports secure peer-to-peer calling, real-time chat, user presence
+          detection, and a responsive UI built with Tailwind CSS. Designed with
+          scalability in mind, it's ideal for virtual meetings or one-on-one
+          communication.
+        </p>
+        <a
+          class="github-button"
+          href="https://github.com/Abhinaba-Jash/CallConnect.git"
+          target="_blank"
+          >View on GitHub</a
+        >
+        <a
+          class="dvideo-button"
+          href="https://drive.google.com/file/d/1BFIQ1sNCLsUNtXo7RUL3ZBxpW4aRJ4eD/view?usp=sharing"
+          target="_blank"
+          >Show demo Video</a
+        >
+      </div>
+      <div class="project">
+        <span id="status-block"
+          >Status:
+          <span style="padding-left: 6px; color: green" id="status"
+            >Completed</span
+          ></span
+        >
+
+        <h3>College-Notes-Saver</h3>
+        <p>
+          A productivity-focused web application that enables students to store,
+          organize, and share class notes efficiently. Built with the MERN
+          stack, it includes features like user authentication, note tagging,
+          search filters, file uploads, and a clean dashboard interface.
+          Designed to help students access academic resources quickly and stay
+          organized.
+        </p>
+
+        <a
+          class="github-button"
+          href="https://github.com/Abhinaba-Jash/college-notes-storer.git"
+          target="_blank"
+          >View on GitHub</a
+        >
+        <a
+          class="dvideo-button"
+          href="https://drive.google.com/file/d/1l0b5_BusAdnfrT4zAHi37M9KoUSgUSb7/view?usp=sharing"
+          target="_blank"
+          >Show demo Video</a
+        >
+      </div>
+      <div class="project">
+        <span id="status-block"
+          >Status:
+          <span style="padding-left: 6px; color: orange" id="status"
+            >Ongoing (Team Project)</span
+          ></span
+        >
+        <h3>Deepfake Detection</h3>
+        <p>
+          Developed a robust system for detecting deepfake videos using
+          Convolutional Neural Networks (CNNs) and the MesoNet architecture. The
+          model was trained on popular deepfake datasets and evaluated using
+          precision-recall metrics. This project focuses on enhancing digital
+          media security and has potential use in content verification
+          platforms.
+        </p>
+
+        <a
+          class="disabled-link"
+          href="https://github.com/yourusername/Deepfake-Detection"
+          target="_blank"
+          >View on GitHub</a
+        >
+        <a
+          class="disabled-link"
+          href="https://github.com/yourusername/Deepfake-Detection"
+          target="_blank"
+          >Show demo Video</a
+        >
+      </div>
+    </section>
+
+    <section id="skills" class="slide-in">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">MERN Stack</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">TypeScript</div>
+        <div class="skill-card">C</div>
+        <div class="skill-card">Tailwind</div>
+        <div class="skill-card">Bootstrap</div>
+        <div class="skill-card">MongoDB</div>
+        <div class="skill-card">MySQL</div>
+        <div class="skill-card">PostgreSQL</div>
+        <div class="skill-card">Firebase</div>
+        <div class="skill-card">Postman</div>
+        <div class="skill-card">Figma</div>
+        <div class="skill-card">Database Design</div>
+        <div class="skill-card">System Design</div>
+
+        <div class="skill-card">Git & GitHub</div>
+      </div>
+    </section>
+
+    <section id="resume" class="fade-in">
+      <h2>Resume</h2>
+      <div class="resume-image-preview">
+        <img id="resume-preview-img"
+          width="380px"
+          src="assets/resume-preview.png"
+          alt="Resume Preview"
+        />
+      </div>
+      <div class="resume-actions">
+        <a class="resume-button github-button" href="assets/resume.pdf" download
+          >Download Resume</a
+        >
+        <a
+          class="resume-button github-button"
+          href="assets/resume.pdf"
+          target="_blank"
+          >View Resume</a
+        >
+      </div>
+    </section>
+
+    <section id="contact" class="slide-in">
+      <h2>Contact Me</h2>
+      <form action="/contact" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button class="github-button" type="submit">Send Message</button>
+      </form>
+    </section>
+    <!-- Add this just above the <footer class="fade-in"> -->
+
+    <section id="social" class="fade-in">
+      <h2>My Handles</h2>
+      <div class="social-links">
+        <a
+          title="Linkedin"
+          href="https://www.linkedin.com/in/abhinaba-jash-344719252/"
+          target="_blank"
+          class="social-icon linkedin"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          title="GitHub"
+          href="https://github.com/Abhinaba-Jash"
+          target="_blank"
+          class="social-icon github"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          title="Leetcode"
+          href="https://leetcode.com/u/Abhinaba_Jash/"
+          target="_blank"
+          class="social-icon leetcode"
+          ><i class="fas fa-code"></i
+        ></a>
+        <a
+          title="Instagram"
+          href="https://www.instagram.com/abhinaba_jash/"
+          target="_blank"
+          class="social-icon instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </section>
+
+    <footer class="fade-in">
+      <p>&copy; 2025 Abhinaba Jash. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
