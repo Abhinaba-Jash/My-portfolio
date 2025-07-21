@@ -108,6 +108,8 @@ form button {
 }
 #speak-button {
   cursor: pointer;
+  width: fit-content;
+
 }
 .disabled-link {
   padding: 8px 15px;
@@ -169,6 +171,77 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
+}
+.certifications-section {
+  padding: 40px 20px;
+  background: #0e0e12; /* dark background to match portfolio */
+  color: #fff;
+  border-radius: 10px;
+}
+
+.certifications-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.certification-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.certification-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.3s ease;
+
+  box-shadow: 0 4px 15px rgba(128, 90, 213, 0.1); /* subtle purple glow */
+}
+
+.certification-card:hover {
+  box-shadow: 0 6px 25px rgba(168, 85, 247, 0.3); /* stronger purple glow */
+}
+
+.certification-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #c084fc; 
+}
+
+.certification-org {
+  font-size: 14px;
+  color: #d4d4d4;
+  margin-top: 1px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.certification-date {
+  font-size: 12px;
+  color: #a3a3a3;
+  margin-top: 0px;
+}
+
+.certification-link {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #a78bfa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.certification-link:hover {
+  text-decoration: underline;
+  color: #c084fc;
 }
 
 @media (max-width: 425px) {
@@ -236,7 +309,14 @@ nav a {
   gap: 1.5rem;
   flex-wrap: wrap;
 }
-
+.bottom{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+#language-prof{
+  color: rgb(163, 159, 159);
+}
 /* GitHub button */
 .github-button,
 .dvideo-button {
